@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vecom/static/css/main.e4342077.css",
+    "main.js": "/vecom/static/js/main.6fd0aa60.js",
+    "service-worker.js": "/vecom/service-worker.js",
+    "static/media/crown.svg": "/vecom/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
+    "index.html": "/vecom/index.html",
+    "main.e4342077.css.map": "/vecom/static/css/main.e4342077.css.map",
+    "main.6fd0aa60.js.map": "/vecom/static/js/main.6fd0aa60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4342077.css",
+    "static/js/main.6fd0aa60.js"
+  ]
+}
