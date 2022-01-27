@@ -25,6 +25,7 @@ const App =()=>
       <Route path={"/women"} element={<WomenPage/>} />
       <Route path={"/men"} element={<MenPage/>} />
       <Route path={"/sign"} element={<SignInRegister/>} />
+      {/*  */}
       </Routes>
       </div>
       );
