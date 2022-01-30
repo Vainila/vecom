@@ -53,7 +53,7 @@ class App extends React.Component {
    render() {
       return (
          <div>
-            <HeaderComponent />
+            <HeaderComponent currentUser = {this.state.currentUser}/>
             <Routes>
                <Route path={"/shop"} element={<ShopPage />} />
                <Route path={"/"} element={<HomePage />} />
