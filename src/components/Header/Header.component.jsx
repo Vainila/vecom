@@ -5,10 +5,10 @@ import { ReactComponent as Logo } from "../../assets/crown.svg";
 
 import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
+import CartIcon from "../cartIcon/CartIcon.component";
+import CartDropdown from "../CartDropdown/CartDropDown.component";
 
-
-
-const HeaderComponent = ({ currentUser }) => (
+const HeaderComponent = ({ currentUser, hidden }) => (
    <div className="header">
       <Link to="/" className="logo-container">
          <Logo className="logo" />
@@ -29,13 +29,18 @@ const HeaderComponent = ({ currentUser }) => (
                   SIGN IN
                </Link>
          }
+         <CartIcon />
       </div>
+      {
+         hidden ? null : <CartDropdown />
+      }
    </div>
 );
 
 
-const mapStatetoProps = state => ({
-   currentUser: state.user.currentUser,
+const mapStatetoProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+   currentUser,
+   hidden
 
 })
 
