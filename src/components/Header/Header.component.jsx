@@ -21,7 +21,7 @@ const HeaderComponent = ({ currentUser, hidden }) => (
          <Logo className="logo" />
       </Link>
       <div className="options">
-         <Link className="option" to="/shop">
+         <Link className="option" to="/shop" replace={true}>
             SHOP
          </Link>
          <Link className="option" to="/shop">
