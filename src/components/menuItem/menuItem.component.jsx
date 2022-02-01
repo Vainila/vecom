@@ -7,7 +7,7 @@ import "./menuItem.styles.scss";
 const MenuItem = ({ title, subtitle, imgUrl, imgSize , url}) => {
    const navigate = useNavigate();
    const handleClickNavigate = () =>{
-      navigate(url);
+      navigate(url, {replace: true});
    }
    return (
 
