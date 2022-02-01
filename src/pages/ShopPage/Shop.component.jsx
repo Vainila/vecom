@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes, useParams } from "react-router-dom";
 import Collection from "../collection/collection.component";
 
 import CollectionOverview from './../../components/CollectionsOverview/CollectionsOverview.component';
@@ -11,7 +11,7 @@ const ShopPage = (props) => {
          {
             <Routes >
                <Route index path={"/"} element={<CollectionOverview/>}/>
-               <Route path={`:id`} element={<Collection/>}/>
+               <Route path={`:id`} element={<Collection match={useParams()}/>} />
                
                
             </Routes>
