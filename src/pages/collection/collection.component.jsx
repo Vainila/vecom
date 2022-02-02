@@ -5,18 +5,24 @@ import { selectCollection } from "../../redux/shop/shop.selectors";
 
 
 import CollectionItem from '../../components/CollectionItem/CollectionItem.component';
-import { useLocation, useParams } from "react-router-dom";
+
 
 
 const Collection = ({collection})=>{
-   const location = useLocation();
    
+   const {title, items} = collection;
    console.log()
    
    return(
-   <div className="category">
-      {console.log(collection)}
-      <h2>CATEGORY PAGE</h2>
+   <div className="collection-page">
+      <h2 className="title">
+         {title}
+      </h2>
+      <div className="items">
+         { items.map(item=>(
+            <CollectionItem key={item.id} item={item} />
+         ))}
+      </div>
    </div>
 );}
 
