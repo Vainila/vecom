@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;400;700&display=swap");
 
 body {
-  margin: 0;
-  font-family: 'Saira Condensed', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-  padding: 0 5%;
+   margin: 0;
+   font-family: "Saira Condensed", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   padding: 0 5%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
 }
 
-*{
+* {
    box-sizing: border-box;
 }
